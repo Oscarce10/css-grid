@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+/*
+ Attribute selector for every tag <a> with attribute href
+ https://www.w3schools.com/css/css_attribute_selectors.asp
+ https://www.w3.org/TR/CSS2/selector.html#attribute-selectors
+ */
+a[href] {
+  text-decoration: none;
+  color: #c93164;
+}
+
+.image {
+  /* We center the contents of these items. You can also do this with flexbox too! */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.image img {
+  border: 2px solid black;
+}
+
+body {
+  height: 100vh;
+  background-color: #0093E9;
+  background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
+}
+
+#init {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.links p {
+  position: relative;
+}
+.links a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+.links a {
+  font-family: "Lexend Deca", sans-serif;
+  color: #ffffff;
+  background-color: coral;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.links .link1 a {
+  align-items: start;
+}
+.links .link3 {
+  align-items: end;
+}
+
+h1 {
+  font-family: "Righteous", cursive;
+  font-size: 80px;
+  color: #d2df25;
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.text {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+code {
+  color: #fff;
+  background-color: #404345;
+  border-radius: 4px;
+  padding: 0 5px;
+}
+
+h3 {
+  font-size: 30px;
+  color: #d2df25;
+  font-weight: bold;
+}
+
+#lista {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+#lista li {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  background-color: #123456;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Righteous", cursive;
+  padding: 8px;
+}
+#lista li a {
+  color: #fff;
+}
+#lista li a:hover {
+  text-decoration: none;
+  color: #123456;
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+.inicio {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.inicio h2 {
+  font-family: "Righteous", cursive;
+  font-size: 40px;
+  color: #2550df;
+}
+.inicio a {
+  color: coral;
+}
+.inicio a:hover {
+  color: #fff;
+}
+
+hr {
+  border: solid 1px black;
+}
+
+.err404 {
+  align-items: center;
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  background-image: url("/assets/img/errorSvg.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 50%;
+  height: 100vh;
+}
+.err404 .not-found {
+  font-family: "Modak", cursive;
+  font-size: 120px;
+  text-align: center;
+  color: #0764bb;
+}
+.err404 .return {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+.err404 .return a {
+  text-decoration: none;
+  color: #d2df25;
+}
+
+/*# sourceMappingURL=styles.css.map */

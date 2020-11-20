@@ -125,3 +125,7 @@ dist
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,node
+
+ejemplos/*.html
+gulpfile.js
+.idea/
